@@ -1,5 +1,5 @@
-import java.util.scanner;
-public class Naturalsum
+import java.util.Scanner;
+public class Day1_q1
 {
     public static void main(String args[])
     {
@@ -14,5 +14,4 @@ public class Naturalsum
         System.out.println("the sum of first"+n+"natural number is:"+sum);
         scan.close();
     }
-
 }
