@@ -1,17 +1,18 @@
-import java.util.Scanner; 
-public class Day2_q2 {
+import java.util.Scanner;
+public class Day2_q3 {
     public static void main(String args[])
     {
         Scanner in=new Scanner(System.in);
         System.out.println("Enter the number");
         int n=in.nextInt();
-        int revnum=0,num=n;
+        int num=n,prod=1;
         while(num!=0)
         {
-            revnum=(revnum+(num%10))*10;
+            int r=num%10;
+            prod*=r;
             num/=10;
         }
-        System.out.println("The reverse of "+n+" is:"+(revnum/10));
+        System.out.println("Product of digits of "+n+" is:"+prod);
         in.close();
     }
 }
