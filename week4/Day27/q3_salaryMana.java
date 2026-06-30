@@ -43,8 +43,7 @@ public class q3_salaryMana {
 
         System.out.println("Enter the number of employees");
         int n = in.nextInt();
-        in.nextLine(); // flush after reading n
-
+        in.nextLine(); 
         Employee[] e = new Employee[n];
 
         for (int i = 0; i < n; i++) {
